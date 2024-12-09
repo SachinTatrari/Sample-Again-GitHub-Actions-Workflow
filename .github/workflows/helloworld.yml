@@ -1,0 +1,18 @@
+name: "Hello World WorkFLow"
+
+on:
+    push:
+        branches:
+            - master
+            
+
+ 
+jobs:
+    hello_world:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: hello_world
+              run: echo "Hello World"  
